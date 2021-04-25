@@ -1,0 +1,133 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Assistant', sans-serif; 
+}
+
+body {
+    background-color: #2F4F4F;
+    color: #f8f8ff;
+}
+
+h1 , h2 {
+    font-family: 'EB Garamond', serif;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: inherit;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.container {
+    width: 55%;
+    margin: auto;
+}
+.input-area {
+    width: 100%;
+    margin: 1rem auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#user-input , #btn-add {
+    border: 1px solid #f8f8ff;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 1.1em;
+    height: 40px;
+}
+#user-input {
+    width: 100%;
+    padding: 0px 26% 0px 12px;
+}
+#btn-add {
+    position: absolute;
+    right: 0px;
+    width: 25%;
+    background-color: rgb(248, 245, 245);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 340ms ease-in-out;
+}
+#btn-add:hover {
+    background-color: #2F4F4F;
+    color: white;
+}
+#btn-add:active {
+    background-color: rgba(26, 25, 25, 0.701);
+}
+
+#list {
+    margin: 0.7rem auto;
+    width: 75%;
+}
+
+.list-heading {
+    padding: .8rem 0px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+#list-items {
+    list-style-type: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+    font-size: 1.2em;
+    border-radius: 3px;
+    border: 1px solid white;
+    transition: all 400ms ease;
+}
+
+.todo li {
+    height: 100%;
+    flex: 1;
+    padding: 10px;
+}
+
+.todo button {
+    font-size: 0.9em;
+    height: 48px;
+    padding: 0px 15px;
+    border: transparent ;
+    background-color: #2F4F4F;
+    color: white;
+    transition: all 340ms ease-in-out;
+}
+
+.todo button:hover {
+    background-color: white;
+    color: #2F4F4F;
+}
+
+.todo button:active {
+    background-color: rgba(255, 255, 255, 0.821);
+}
+
+.fa-minus-circle, .fa-pen, .fa-clipboard-check {
+    pointer-events: none;
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+#edit-todo {
+    background-color: #2F4F4F;
+    border: transparent;
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    color: #f8f8ff;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
